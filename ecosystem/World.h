@@ -14,9 +14,10 @@ public:
 	World(int size);
 
 	// delete the world
-	// TODO: remove all initialized tiles in the grid
 	~World();
 
+	// returns the number of tiles on the grid
+	int size();
 };
 
 #endif

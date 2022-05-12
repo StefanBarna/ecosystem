@@ -17,22 +17,22 @@ public:
 	Grass();
 
 	// retrieves the derived Tile ID
-	virtual int ID();
+	int ID() const;
 
 	// updates the derived Tile
-	virtual void update();
+	void update();
 
 	// retrieve percent chance to spawn on a random tile
-	virtual int spawnRate();
+	int spawnRate() const;
 
 	// retrieve percent chance to spread to a neighboring tile
-	virtual int spreadRate();
+	int spreadRate() const;
 
 	// retrieve minimum lifespan while uninteracted
-	virtual int lifespan();
+	int lifespan() const;
 
 	// retrieve rate at which the plant decays after lifespan
-	virtual int decayRate();
+	int decayRate() const;
 };
 
 #endif
